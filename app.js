@@ -1,5 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-Container");
+const inputel = document.querySelector("input");
+
 function addTack() {
   if (inputBox.value === "") {
     alert("inputga soz yozing!");
@@ -11,7 +13,10 @@ function addTack() {
     span.innerHTML = "x";
     li.appendChild(span);
   }
+
   inputBox.value = "";
+  const music = new Audio("./music/sound-2.mp3");
+  music.play();
   saveData();
 }
 
@@ -42,5 +47,12 @@ function darkmode() {
 
   localStorage.setItem("darkmode", !wasDarkmode);
   body.classList.toggle("dark-mode", !wasDarkmode);
+  const music = new Audio("./music/sound-5.mp3");
+  music.play();
 }
 document.querySelector(".btn").addEventListener("click", darkmode);
+
+inputel.addEventListener("input", () => {
+  const music = new Audio("./music/sound-5.mp3");
+  music.play();
+});

@@ -101,11 +101,19 @@ ul li span:hover {
   background: #edeef0;
 }
 .app-buton {
-  background-color: orangered;
+  background-color: aqua;
+  color: #edeef0;
   padding: 20px;
   height: 10px;
-  border-radius: 50px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+}
+.app-buton:hover {
+  background-color: blue;
 }
 /* dark mode*/
 body {
@@ -116,4 +124,9 @@ body {
 .dark-mode {
   color: white;
   background: #002765;
+}
+.btn {
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 5px;
 }
