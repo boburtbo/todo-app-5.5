@@ -108,8 +108,8 @@ ul li span:hover {
   color: #edeef0;
   padding: 20px;
   height: 10px;
-  border-radius: 15px;
-  border: none;
+  border: 15px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
