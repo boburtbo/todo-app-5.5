@@ -5,16 +5,19 @@
   box-sizing: border-box;
 }
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #153677, #4e085f); */
+  margin-top: 50px;
   padding: 10px;
 }
 
 .todo-app {
   width: 100%;
   max-width: 540px;
-  background: #eed1d1;
+  background: #ba5656;
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
@@ -128,4 +131,12 @@ body {
 .btn {
   background-color: aqua;
   border-radius: 5px;
+}
+
+.totdo {
+  color: #edeef0;
+}
+
+h2 {
+  color: #edeef0;
 }
