@@ -130,6 +130,7 @@ body {
 }
 .btn {
   background-color: aqua;
+  border: 15px;
   border-radius: 5px;
 }
 
